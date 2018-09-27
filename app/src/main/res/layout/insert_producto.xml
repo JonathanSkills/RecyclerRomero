@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="match_parent" android:padding="20dp">
+
+
+
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/insert_name"
+
+        android:hint="Producto"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert_categoria"
+        android:hint="Categoria"
+        android:layout_below="@+id/insert_name"
+        android:layout_alignParentStart="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert_precio"
+        android:inputType="numberDecimal"
+        android:hint="Precio"
+        android:layout_below="@+id/insert_categoria"
+        android:layout_alignParentStart="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert_stock"
+        android:hint="Stock"
+        android:inputType="number"
+        android:layout_below="@+id/insert_precio"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

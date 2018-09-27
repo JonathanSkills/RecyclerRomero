@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtitle"
+        android:text="ACTUALIZAR PRODUCTOS"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingBottom="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvprod"
+        android:layout_below="@+id/tvtitle"
+        android:text="Producto: "/>
+
+    <EditText
+        android:id="@+id/update_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvprod"
+        android:hint="Producto" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvcat"
+        android:layout_below="@+id/update_name"
+        android:text="Categoría: "/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_categoria"
+        android:hint="Categoria"
+        android:layout_below="@+id/tvcat"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvprec"
+        android:layout_below="@+id/update_categoria"
+        android:text="Precio: "/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_precio"
+        android:inputType="numberDecimal"
+        android:hint="Precio"
+        android:layout_below="@+id/tvprec"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvst"
+        android:layout_below="@+id/update_precio"
+        android:text="Stock: "/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_stock"
+        android:hint="Stock"
+        android:inputType="number"
+        android:layout_below="@+id/tvst"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="150dp"
+        android:layout_margin="14dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_stock"
+
+        android:background="@android:color/darker_gray"
+        android:text="Cancelar"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_margin="14dp"
+        android:id="@+id/btnGuardar"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_stock"
+        android:layout_toRightOf="@+id/btnCancelar"
+        android:background="@color/colorPrimary"
+        android:text="OK"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light" />
+</RelativeLayout>
